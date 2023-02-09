@@ -1,0 +1,18 @@
+server.port: 8859
+spring:
+  application.name: malcolm-provider
+  cloud:
+    nacos:
+      # 配置中心设置
+      config:
+        file-extension: yml
+        namespace: '09713525-260c-4868-adff-6294c0748a99'
+        server-addr: 192.168.10.118:8848
+        username: nacos
+        password: nacos123abc
+        # 共享配置
+        extension-configs: common.yml
+        # 配置动态刷新默认true
+        refresh-enabled: true
+jasypt.encryptor.password: MGyWJA5sgYmgtkoc
+
